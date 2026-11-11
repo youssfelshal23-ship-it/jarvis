@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#06111e">
+  <meta name="description" content="JARVIS personal AI assistant interface">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <title>J.A.R.V.I.S</title>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark">J</div>
+        <div><div class="brand-name">J.A.R.V.I.S</div><div class="brand-sub">PERSONAL AI SYSTEM</div></div>
+      </div>
+      <div class="status"><span class="status-dot"></span><span id="systemStatus">STANDBY</span></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow">STARK INDUSTRIES · INTERFACE PROTOTYPE</div>
+        <h1>Good day, <span>Sir.</span></h1>
+        <p class="intro">Your personal assistant is standing by.</p>
+
+        <div class="reactor-wrap">
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+          <div class="reactor">
+            <div class="reactor-core"><span>J</span></div>
+          </div>
+          <div class="reactor-label">CORE <b id="coreState">READY</b></div>
+        </div>
+
+        <button class="mic-button" id="micButton" type="button">
+          <span class="mic-icon">🎙</span><span id="micLabel">TAP TO SPEAK</span>
+        </button>
+        <p class="hint" id="voiceHint">Microphone access is required. Best tested in Chrome on Android.</p>
+      </section>
+
+      <section class="panel">
+        <div class="section-head"><h2>Conversation</h2><button class="text-button" id="clearButton">CLEAR</button></div>
+        <div class="messages" id="messages" aria-live="polite">
+          <div class="message jarvis"><div class="speaker">JARVIS</div><p>Good day, sir. Interface systems are online. Voice input is ready for testing.</p></div>
+        </div>
+        <form id="chatForm" class="composer">
+          <input id="messageInput" type="text" placeholder="Type a command..." autocomplete="off">
+          <button type="submit" aria-label="Send">➤</button>
+        </form>
+      </section>
+
+      <section class="grid">
+        <div class="stat-card"><span class="stat-icon">◉</span><div><small>VOICE ENGINE</small><strong id="voiceState">AVAILABLE</strong></div></div>
+        <div class="stat-card"><span class="stat-icon">⌁</span><div><small>AI CONNECTION</small><strong>NOT CONNECTED</strong></div></div>
+        <div class="stat-card"><span class="stat-icon">▣</span><div><small>DEVICE</small><strong>ANDROID WEB</strong></div></div>
+        <div class="stat-card"><span class="stat-icon">◈</span><div><small>BUILD</small><strong>PHASE 01</strong></div></div>
+      </section>
+    </main>
+    <footer>J.A.R.V.I.S · PHASE 01 · LOCAL INTERFACE DEMO</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

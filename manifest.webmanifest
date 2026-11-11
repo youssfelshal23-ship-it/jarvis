@@ -1,0 +1,10 @@
+{
+  "name": "JARVIS Personal AI",
+  "short_name": "JARVIS",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#050c15",
+  "theme_color": "#06111e",
+  "description": "JARVIS Android assistant interface prototype",
+  "icons": []
+}
